@@ -1,0 +1,243 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body{
+	background-color: #C19A6B;
+}
+
+/*header*/
+a{
+	color: inherit;
+	text-decoration: none;
+}
+.medsos{
+	padding: 5px 0;
+	background-color: #C19A6B;
+}
+.medsos ul li{
+	display: inline-block;
+	color: #6F4E37;
+	margin-right: 15px;
+	font-size: 20px;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+.container:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*navigasi bar*/
+nav{
+	background: #6F4E37;
+	height: 80px;
+	width: 100%;
+}
+label.logo{
+	color: #F7E7CE;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: #F7E7CE;
+	font-size: 12px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active, a:hover{
+	background: #C19A6B;
+	transition: .5s;
+}
+.checkbtn{
+	font-size: 30px;
+	color: #F7E7CE;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+   nav ul{
+   	position: fixed;
+   	width: 100%;
+   	height: 100vh;
+   	background: #C19A6B;
+   	top: 80px;
+   	left: 0;
+   	text-align: center;
+   	transition: all .5s;
+   }
+   nav ul li{
+   	display: block;
+   	margin: 50px 0;
+   	line-height: 30px;
+   }
+   nav ul li a{
+   	font-size: 20px;
+   }
+a:hover, a.active{
+	background: none;
+	color: #6F4E37;
+}
+#check:checked ~ ul{
+	left: 0;
+}
+}
+
+/*banner*/
+.banner{
+	background: url(sivalibg.jpg) no-repeat;
+	background-size: cover;
+	height: calc(100vh - 80px);
+}
+
+/*konten*/
+#marquee{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: arial;
+	color: #6F4E37;
+	text-align: center;
+	font-weight: bold;
+}
+
+.container2{
+	width: 80%;
+	padding: 30px;
+	margin: 0 auto;
+}
+section{
+	padding: 50px 0;
+}
+section h3{
+	text-align: center;
+	background-color: #6F4E37;
+	padding: 10px 10px;
+	margin: 10px 10px;
+	border-radius: 3px;
+	color: #F7E7CE;
+}
+.about p{
+	color: #F7E7CE;
+	word-spacing: 2px;
+	line-height: 25px;
+	text-align: justify;
+	background-color: #6F4E37;
+	padding: 10px 10px;
+	margin: 10px 10px;
+	border-radius: 3px;
+}
+
+.card-container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 25px;
+	margin-top: 60px;
+}
+.card{
+	width: 225px;
+	height: 350px;
+	background-color: #6F4E37;
+	border: 5px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	transition: transform, 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover{
+	transform: translateY(-20px);
+	box-shadow: 0 10px 15px rgba(0, 0, 0, 0.8);
+}
+.card img{
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.card-content{
+	padding: 5px;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.card-content h1{
+	font-size: 17px;
+	margin-bottom: 10px;
+	text-align: center;
+	color: #F7E7CE;
+}
+.card-button{
+	display: inline-block;
+	background-color: #F7E7CE;
+	color: #6F4E37;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 7px 10px;
+	font-size: small;
+	align-items: center;
+	margin-top: 40px;
+}
+.card{
+	outline: 5px double white;
+}
+
+.p2{
+	font-size: 17px;
+  font-family: arial;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 30px 30px;
+  color: #6F4E37; 
+  max-width: 300px; 
+  line-height: 1.0;
+  letter-spacing: 1.6px;
+  text-align: center;
+  border-style: dashed;
+}
+
+/*footer*/
+footer{
+	padding: 30px 0;
+	background-color: #6F4E37;
+	color: #F7E7CE;
+	text-align: center;
+}
+
+#catalogue:target .catalogue{
+	opacity: 1;
+}
